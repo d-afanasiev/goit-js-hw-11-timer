@@ -1,0 +1,33 @@
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.value {
+  font-size: 60px;
+  padding: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 16px;
+  text-align: center;
+  color: darkgray;
+}
