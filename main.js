@@ -2,6 +2,8 @@ class CountdownTimer {
   constructor({ selector, targetDate }) {
     this.selector = document.querySelector(`${selector}`);
     this.targetDate = targetDate;
+
+    this.timer();
   }
 
   pad(value) {
@@ -18,6 +20,7 @@ class CountdownTimer {
 
     return { days, hours, mins, secs };
   }
+
   timer() {
     const startTime = this.targetDate;
 
@@ -49,5 +52,3 @@ const newTimer = new CountdownTimer({
   selector: "#timer-1",
   targetDate: new Date("Jul 17, 2021"),
 });
-
-newTimer.timer();
